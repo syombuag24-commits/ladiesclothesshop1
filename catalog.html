@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalog — Elegance Wardrobe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Catalog</h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid categories">
+      <article class="category-card">
+        <h2>Dresses</h2>
+        <p>Flowy, elegant, and everyday chic.</p>
+        <a class="btn" href="products.html#dresses">View Dresses</a>
+      </article>
+      <article class="category-card">
+        <h2>Tops</h2>
+        <p>From basics to statement pieces.</p>
+        <a class="btn" href="products.html#tops">View Tops</a>
+      </article>
+      <article class="category-card">
+        <h2>Shoes</h2>
+        <p>Comfort meets style.</p>
+        <a class="btn" href="products.html#shoes">View Shoes</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Elegance Wardrobe</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout — Elegance Wardrobe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Checkout</h1>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="cart.html" class="cart-link">Cart (<span id="cartCount">0</span>)</a>
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <form id="checkoutForm" class="form">
+      <fieldset>
+        <legend>Customer details</legend>
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="payment">Payment method</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select…</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </fieldset>
+
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Elegance Wardrobe</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
